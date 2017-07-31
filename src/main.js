@@ -41,6 +41,7 @@ import "../statics/mui/css/mui.css";
 //导入css
 import "../statics/css/site.css";
 Vue.use(mintui);
+
 //导入filter;
 import moment from "moment";
 //日期格式化

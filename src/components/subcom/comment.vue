@@ -27,7 +27,6 @@
 
         <!--3.0 实现获取更多按钮-->
         <mt-button type="danger" size="large" plain @click="getmore">加载更多</mt-button>
-
     </div>
 </template>
 <script>
@@ -46,7 +45,6 @@
         },
         methods: {
             getData(){
-
                 var pageIndex=this.pageIndex || 1,url = "http://182.254.146.100:8899/api/getcomments/"+this.send+"?"+"pageindex="+pageIndex;
                 this.$http.get(url).then(function(response){
                     var data=response.body;
@@ -79,13 +77,10 @@
                 this.flag=true;
                 this.getData();
             }
-
-
         }
     }
 </script>
 <style scoped>
-
     #postcomment{
         padding: 5px;
     }
